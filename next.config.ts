@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+import { NextConfig } from 'next';
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const config: NextConfig = {
+  images: {
+    domains: [], // Add any domains you'll load images from
+    remotePatterns: [], // Or configure remote patterns if needed
+  },
 };
 
-export default nextConfig;
+export default config;
